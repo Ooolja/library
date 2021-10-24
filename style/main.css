@@ -1,0 +1,256 @@
+body{
+    margin: 0;
+    overflow-x: hidden !important;
+    background-image: url(images/lihtar.svg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 200px;
+    overflow-x: hidden;
+}
+div, p, span{
+	-moz-user-select: none;
+	-ms-user-select: none; 
+	-o-user-select: none; 
+	-webkit-user-select: none;
+}
+.audiojs{
+	display: none;
+}
+.scrubber{display: none;}
+.time{display: none;}
+@media(min-width: 769px){
+	.allsounds .button{
+		width: 100%;
+	    font-size: 8vh;
+	    padding: 3.4vh;
+	    font-weight: 300;
+	    border: 1px solid #d4d4d4;
+	    margin-left: 0px;
+	    margin-right: 0px;
+	    font-family: Verdana;
+	    cursor: pointer;
+	    display: block;
+	    text-decoration: none;
+	    color: #270801;
+	}
+
+	.back{
+		padding: 5vh 0 !important;
+		text-align: center;
+		background-color: #00ff62;
+		width: 100%;
+		position: fixed;
+	}
+	.bgdiv{
+		width: 100%;
+		height: 20vh;
+	}
+	.mnheadbtn{
+		background-color: #00ff62;
+		text-align: center;
+		float: right;
+	}
+	.mnsndbtn{
+		background-color: #00ff62;
+		text-align: left;
+	}
+	.soundimg{
+		width: 10vh;
+		height: 10vh;
+	}
+	.issound{
+		height: 16.2vh !important;
+		width: 12%;
+		float: left;
+		overflow: hidden;
+	}
+	.instrc{
+		height: 16.2vh !important;
+		width: 100% !important;
+		float: right;
+		overflow: hidden;
+	}
+}
+@media(max-width: 768px){
+	.back{
+		font-size: 20px !important;
+		padding: 15px !important;
+		background-color: #00ff62;
+	}
+	.allsounds .button{
+		overflow-x: hidden;
+	    font-size: 30px;
+	    padding: 51px 20px;
+	    font-weight: 300;
+	    border: 1px solid #00ff62;
+	    margin-left: 0px;
+	    margin-right: 0px;
+	    font-family: Verdana;
+	    cursor: pointer;
+	    display: block;
+	    text-decoration: none;
+	    color: #270801;
+	}
+	.soundimg{
+		width: 31px;
+    	height: 31px;
+	}
+	.issound{
+		height: 88px;
+		width: 80px;
+		float: left;
+		overflow: hidden;
+		background-color: #00ff62;
+	}
+	.instrc{
+		width: calc(100% - 81px);
+		float: right;
+		overflow: hidden;
+	}
+	.detalsound{
+		background-size: 100px;
+	}
+	body{
+		width: 100%;
+		overflow-x: hidden;
+		background-size: 100px;
+	}
+}
+
+.detalsound{
+	width: 100% !important;
+    height: 79%;
+    /*position: fixed;*/
+    z-index: 5;
+    /*top: 0;*/
+    /*background-color: #fff;*/
+    margin: 0 auto;
+    overflow: hidden;
+/*    background-image: url(images/lihtar.svg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 200px;*/
+}
+.musiccontainer{
+	width: 100%;
+	overflow: hidden;
+}
+.arleft{
+	width: 25% !important;
+	padding: 0px !important;
+	position: fixed;
+	left: 0;
+	border:1px solid #00ff62;
+	height: 100%;
+	cursor: pointer;
+	z-index: 10;
+	text-decoration: none !important;
+	color:#270801;
+}
+.arright{
+	width: 25% !important;
+	padding: 0px !important;
+	position: fixed;
+	right: 0;
+	border:1px solid #00ff62;
+	height: 100%;
+	cursor:pointer;
+	z-index: 10;
+	text-decoration: none !important;
+	color:#270801;
+}
+.arleft span, .arright span{
+	height: 40%;
+	text-align: center;
+	display: block;
+	font-size: 20vh;
+	font-weight: 300;
+	margin-top:50%;
+	text-decoration: none;
+	color:#270801;
+}
+.playpause{
+	width: calc(50% - 4px);
+	position: fixed;
+	left: 25%;
+	border:1px solid #00ff62;
+	height: 100%;
+	cursor: pointer;
+	z-index: 9;
+}
+.playpause .button{
+	height: 100%;
+	text-align: center;
+	display: block;
+	font-size: 20vh;
+	font-weight: 300;
+	padding: 0;
+	padding-top:25%;
+}
+.playpause h3{
+	text-align: center;
+	font-size: 5vh;
+	font-family: Verdana;
+	height: 0;
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+    margin-top: -15%;
+    margin-bottom: 15%;
+}
+.mainheader{
+	clear: both;
+	overflow-x: hidden;
+}
+
+.radioname{
+	font-family: Verdana;
+	font-size: 15vh;
+	text-align: center;
+	margin: 20vh 0;
+}
+/*.soundon{
+	display: none;
+}*/
+#gocooc, #nocooc{
+	display: none;
+}
+form{margin: 0 !important;}
+@media(max-width: 476px){
+	.playpause h3{
+		text-align: center;
+		font-size: 5vh;
+		font-family: Verdana;
+		height: 0;
+	    margin: 0;
+	    padding: 0;
+	    z-index: 0;
+	    margin-top: -15%;
+	    margin-bottom: 130px !important;
+	}
+	.arleft span, .arright span{
+		height: 40%;
+		text-align: center;
+		display: block;
+		font-size: 20vh;
+		font-weight: 900;
+		margin-top:150px !important;
+		text-decoration: none;
+		color:#270801;
+	}
+}
+.on{
+	transition: 0.5s;
+	background-color: #270801;
+	color: #fff !important;
+}
+.on span{
+	color: #fff !important;
+}
+.on .soundimg{
+	padding: 15px;
+	background-color: #00ff62;
+    margin-top: -15px;
+    margin-left: -15px;
+    border-radius: 50%;
+}
